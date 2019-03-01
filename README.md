@@ -1,4 +1,4 @@
-# ds4csuci
+# calcoastpoll
 Data Science for Cal State Channel Islands, presentation 2019-02
 
 
