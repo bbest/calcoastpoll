@@ -1,0 +1,398 @@
+---
+title: "California Coastal Poll"
+output:
+  html_document:
+    code_folding: hide
+bibliography: ../coastal-perceptions.bib
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=F, warning = F)
+```
+
+## Overview
+
+[@andersonPublicPerceptionsCoastal2012; @levinBiblicalInfluencesConservation2014]
+
+## Read Data
+
+- tidy principles
+- cheatsheets, in RStudio Help or at  [Cheatsheets - RStudio](https://www.rstudio.com/resources/cheatsheets/):
+    - [Data Import](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf)
+    - [Data Transformation with dplyr](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
+- paths: relative vs absolute
+- data: raw (locked) vs derived, tmp
+
+Want:
+
+survey_id | heading | question | answer | value_num | value_chr
+----------|---------|----------|--------|-----------|----------
+...       |         |          |        |           |
+
+```{r}
+# libraries
+library(tidyverse)
+library(readxl)
+library(here)
+library(glue)
+
+# paths
+data_xlsx         <- here("data/raw/CoastalOpinionPoll_thru2017.xlsx")
+headers_xlsx      <- here("data/derived/CoastalOpinionPoll_thru2017_headers.xlsx")
+questions_csv     <- here("data/derived/questions.csv")
+answers_csv       <- here("data/derived/answers.csv")
+data_csv          <- here("data/derived/data.csv")
+todo_chr2num_csv  <- here("data/derived/todo_data-not-numeric.csv")
+
+headers  <- read_excel(headers_xlsx, col_types="text") %>% 
+  gather(column, value, -row) %>% 
+  spread(row, value) %>% 
+  mutate(
+    column = str_replace(column, fixed(".."), "") %>% as.numeric() - 1) %>% 
+  arrange(column) %>% 
+  select(column, heading, question, answer, comment1, comment2, comment3) %>% 
+  fill(heading, question)
+#View(headers)
+
+headers %>% 
+  group_by(heading, question) %>% 
+  summarise(
+    column1  = first(column),
+    comment1 = first(comment1),
+    comment2 = first(comment2),
+    comment3 = first(comment3)) %>% 
+  write_csv(questions_csv)
+questions <- read_csv(questions_csv)
+
+headers  <- headers %>% 
+  select(-heading, -starts_with("comment"))
+#View(headers)
+
+n_max <- 12891-7
+data <- read_excel(
+  data_xlsx, 
+  n_max=n_max, guess_max=n_max, skip=8, col_names=F)
+#View(head(data))
+
+col_class <- map_chr(data, class)
+table(col_class)
+
+data_chr <- data[, c(T, col_class[-1] %in% c("character"))]  %>% 
+  rename(survey_id = "..1") %>% 
+  gather(column, value_chr, -survey_id) %>% 
+  mutate(
+    column = str_replace(column, fixed(".."), "") %>% as.numeric()) %>%
+  filter(!is.na(value_chr)) %>% 
+  left_join(headers, by="column")
+#View(data_chr)
+
+# check to see if value_chr should be value_num
+data_chr_ck <- data_chr %>% 
+  group_by(column, question, answer) %>% 
+  summarize(
+    n = n())
+# View(data_chr_ck)
+
+# columns confirmed to be ok as character
+cols_chr <- c(
+  2,4:7,10:13,46,167,256,263,434,437,438,447,455,460,487)
+# TODO: name NA answers: columns 256,438, 
+# TODO: fix column 455 (QM) Zip Code : "answerd"
+# - eg values of Leo Carrillo State Park row 10887, not 1 or 0
+
+# convert character to numeric
+data_chr_num <- data_chr %>% 
+  filter(!column %in% cols_chr) %>% 
+  mutate(
+    value_num = as.numeric(value_chr))
+# NAs introduced by coercion
+
+# flag data to clean that didn't convert
+data_chr_num %>% 
+  filter(is.na(value_num)) %>% 
+  write_csv(todo_chr2num_csv)
+
+# remove converted numeric data from data_chr
+data_chr <- data_chr %>% 
+  filter(column %in% cols_chr)
+
+# cleanup converted numeric data
+data_chr_num <- data_chr_num %>% 
+  select(-value_chr) %>% 
+  filter(!is.na(value_num))
+
+data_num <- data[, c(T, col_class[-1] %in% c("logical","numeric"))]  %>% 
+  rename(survey_id = "..1") %>% 
+  gather(column, value_num, -survey_id) %>% 
+  mutate(
+    column = str_replace(column, fixed(".."), "") %>% as.numeric()) %>%
+  filter(!is.na(value_num)) %>% 
+  left_join(headers, by="column")
+#View(data_num)
+
+d <- bind_rows(data_num, data_chr, data_chr_num) %>% 
+  select(survey_id, column, question, answer, value_num, value_chr) %>%
+  arrange(survey_id, column) %>% 
+  filter(!str_detect(answer, "^x"))
+#View(d)
+
+# TODO: check for expected 1s or 0s
+
+answers <- questions %>% 
+  left_join(
+    d, by="question") %>% 
+  group_by(heading, question, answer, column) %>% 
+  summarize(
+    value_min = min(value_num, na.rm = T),
+    value_max = max(value_num, na.rm = T),
+    n_surveys = length(unique(survey_id))) %>% 
+  ungroup() %>% 
+  mutate(
+    value_min = ifelse(is.infinite(value_min), NA, value_min),
+    value_max = ifelse(is.infinite(value_max), NA, value_max)) %>% 
+  arrange(column) %>% 
+  write_csv(answers_csv)
+answers <- read_csv(answers_csv)
+#View(answers)
+```
+
+
+```{r old, eval=F}
+d_qa <- questions %>% 
+  select(heading, question) %>% 
+  left_join(
+    questions %>% 
+      select(heading, question), 
+    by="question") %>% 
+  nest(survey_id, column, answer, value_num, value_chr)
+#View(d)
+
+
+d_n <- d %>% 
+  left_join(
+    questions %>% 
+      select(heading, question), 
+    by="question") %>% 
+  nest(survey_id, column, answer, value_num, value_chr)
+#View(d)
+
+qs <- questions %>% 
+  select(heading, question) %>% 
+  nest(question) %>% 
+  jsonlite::toJSON() %>%
+  #listviewer::reactjson()
+  listviewer::jsonedit()
+```
+
+
+## Coastal (General): CA ocean health better?
+
+```{r}
+library(lubridate)
+here = here::here
+library(RColorBrewer)
+library(plotly)
+
+q <- "CA ocean health better?"
+o_q <- "Metadata"
+o_a <- "year"
+f_a <- "answered"
+
+d_o <- d %>% 
+  filter(
+    question == !!o_q, 
+    answer   == !!o_a) %>% 
+  select(survey_id, value_num) %>% 
+  rename(!!o_a := value_num)
+d_o
+
+d_q <- d %>% 
+  filter(question == !!q) %>% 
+  left_join(d_o, by="survey_id") %>% 
+  arrange(survey_id, answer)
+
+
+d_a <- d_q %>% 
+  group_by(question, year, answer) %>% 
+  summarize(
+    sum = sum(value_num)) %>% 
+  filter(answer != !!f_a) %>% 
+  ungroup() %>% 
+  mutate(
+    year = ymd(year, truncated = 2))
+d_a
+
+# Stacked Percent
+rdylgn <- brewer.pal(5,"RdYlGn")
+
+g <- ggplot(d_a, aes(fill=answer, y=sum, x=year)) + 
+  geom_bar( stat="identity", position="fill") +
+  scale_fill_manual(values=c(rdylgn[1], "grey50", rdylgn[5])) +
+  ylab("%") +
+  theme_minimal()
+g
+
+ggplotly(g)
+```
+
+
+## Climate Change: Climate change problem?
+
+Climate Change: perception over time, relationship with education and news?
+
+```{r}
+q    <- "Climate change problem?"
+o_q  <- "Education"
+
+pctbar_qyn_qm <- function(d, q, o_q, interactive=T){
+  
+  o_answers <- d %>% 
+    filter(
+      question == !!o_q, 
+      answer   != "answered") %>% 
+    select(column,answer) %>% 
+    arrange(column) %>% 
+    distinct() %>% 
+    pull(answer)
+  
+  d_o <- d %>% 
+    filter(
+      question == !!o_q, 
+      answer   != "answered",
+      value_num == 1) %>% 
+    select(survey_id, answer) %>% 
+    rename(other = answer) %>% 
+    mutate(
+      other = factor(other, levels=o_answers, ordered=T))
+  #d_o
+  #d_o$other
+
+  d_q <- d %>% 
+    filter(
+      question == !!q,
+      answer   != "answered",
+      value_num == 1) %>% 
+    select(-value_num, -value_chr) %>% 
+    left_join(d_o, by="survey_id") %>% 
+    filter(!is.na(other)) %>% 
+    arrange(survey_id, answer)
+  #d_q
+  
+  d_a <- d_q %>% 
+    group_by(question, answer, other) %>% 
+    summarize(
+      sum = n())
+  #d_a
+  
+  # Stacked Percent
+  rdylgn <- brewer.pal(5,"RdYlGn")
+  
+  g <- ggplot(d_a, aes(fill=answer, y=sum, x=other)) + 
+    geom_bar( stat="identity", position="fill") +
+    #facet_wrap(~condition) + 
+    scale_fill_manual(values=c(rdylgn[1], "grey50", rdylgn[5])) +
+    ylab("%") +
+    xlab(o_q) +
+    theme_minimal()
+  
+  if (interactive) return(ggplotly(g))
+  g
+}
+
+pctbar_qyn_qm(d, "Climate change problem?", "Education")
+```
+
+```{r}
+pctbar_qyn_qm(d, "Climate change problem?", "Env Issues")
+```
+
+
+## Recreational Activities: BBQ
+
+### Treemap
+
+[Draw Treemaps in 'ggplot2' • treemapify](http://wilkox.org/treemapify/)
+
+```{r}
+library(treemapify)
+
+bbq <- d %>% 
+  filter(
+    question == "Recreational Activities",
+    answer == "BBQ") %>% 
+  pull(value_num)
+#table(bbq)
+# TODO: check value_num %in% c(0,1); ie fix value_num > 1
+
+q <- "Recreational Activities"
+
+d_a <- d %>% 
+  filter(
+    question == !!q,
+    !answer %in% c("answered", "*response"),
+    value_num > 0) %>% 
+  group_by(answer) %>% 
+  summarize(
+    n = n())
+#d_a
+
+ggplot(d_a, aes(area = n, fill=answer, label=answer)) +
+  geom_treemap() +
+  geom_treemap_text(
+    fontface = "italic", color = "white", 
+    place = "centre", grow = TRUE) +   
+  guides(fill=FALSE)
+```
+
+### Treemap animated by year
+
+```{r}
+library(gganimate)
+
+q <- "Recreational Activities"
+
+d_yr <- d %>% 
+  filter(
+    question == "Metadata", 
+    answer   == "year") %>% 
+  select(survey_id, year=value_num) %>% 
+  mutate(
+    year = as.integer(year))
+#d_yr
+
+d_a <- d %>% 
+  filter(
+    question == !!q,
+    !answer %in% c("answered", "*response"),
+    value_num > 0) %>% 
+  left_join(
+    d_yr, by = "survey_id") %>% 
+  group_by(year, answer) %>% 
+  summarize(
+    n = n())
+#d_a
+
+g <- ggplot(d_a, aes(area = n, fill=answer, label=answer)) +
+  geom_treemap() +
+  geom_treemap(layout = "fixed") +
+  geom_treemap_text(
+    layout = "fixed", 
+    fontface = "italic", color = "white", 
+    place = "centre", grow = TRUE) +   
+  guides(fill=FALSE) +
+  transition_time(year) +
+  ease_aes('linear') +
+  labs(title = "Year: {frame_time}")
+
+gif <- here(glue("figs/{q} animated_treemap.gif"))
+anim_save(gif, g, nframes = 50)
+```
+
+![](`r gif`)
+
+
+## References
+
+
