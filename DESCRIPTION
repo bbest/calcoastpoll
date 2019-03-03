@@ -1,0 +1,27 @@
+Package: calcoastpoll
+Title: Tidy and visualize the California Coast Poll by Sean Anderson
+Version: 0.1
+Authors@R: person("Ben", "Best", email = "first.last@example.com", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+Depends: R (>= 3.5.2)
+License: MIT license
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/bbest/calcoastpoll
+BugReports: https://github.com/bbest/calcoastpoll/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Imports: 
+    readxl,
+    dplyr,
+    ggplot2,
+    tidyr,
+    stringr,
+    readr,
+    purrr,
+    RColorBrewer,
+    lubridate,
+    treemapify

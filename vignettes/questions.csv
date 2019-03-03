@@ -1,0 +1,108 @@
+heading,question,column1,comment1,comment2,comment3
+Beach,Recreational Activities,21,Question 36,NA,NA
+Beach,Visit SoCal Beaches,14,Question 27,NA,NA
+Channel Islands,Channel Islands visited,148,Question 18,NA,NA
+Channel Islands,Last visited Channel Islands?-Original Categories,141,Question 17,NA,NA
+Climate Change,Climate change problem?,157,Question 6,NA,NA
+Coastal (General),CA ocean health better?,246,Question 19,NA,NA
+Coastal (General),Good mgmnt of Coast?,242,Question 13,NA,NA
+Coastal (General),Rank threats to coastal,237,Question 8,NA,NA
+Coastal Science,Describe ecology,250,Question 3,NA,NA
+Coastal Science,Motivation of scientists,257,Question 33,NA,NA
+Demographics,Education,477,Question 55,NA,NA
+Demographics,Env Issues,448,Question 65,New Question Sept 2015,NA
+Demographics,Gender,474,Question 54,NA,NA
+Demographics,Household Income,464,Question 52,90-120 added 2012; >150 added Sept 2017,NA
+Demographics,Language,483,Question 56,NA,NA
+Demographics,Last natural area visited,436,Question 31,NA,NA
+Demographics,Occupation,459,Question 50,NA,NA
+Demographics,Source of news,424,Question 9,Split in 2014,NA
+Demographics,Valuation of nature,439,Question 24,NA,NA
+Demographics,Voter,471,Question 53,NA,NA
+Demographics,Year Born,461,Question 51,NA,NA
+Demographics,Years at Zip,457,Question 49,NA,NA
+Demographics,Zip Code,455,Question 48,NA,NA
+Endangered Species,Endangered Sp laws,231,Question 25,added in 2010,NA
+Management Scoring,1969 SB Spill,277,NA,NA,NA
+Management Scoring,1997 Gillnet ban,295,NA,NA,NA
+Management Scoring,2012 State Park Closures,394,NA,NA,NA
+Management Scoring,AB 32 cap-and-trade,307,NA,NA,NA
+Management Scoring,Abalone Closure,292,NA,NA,NA
+Management Scoring,Ballona Rest'n,358,NA,NA,NA
+Management Scoring,Beach Nests,379,NA,NA,NA
+Management Scoring,Bolsa Chica Rest'n,364,NA,NA,NA
+Management Scoring,CA Coastal Monument,346,NA,NA,NA
+Management Scoring,CA Groundwater,415,1st asked 2014,NA,NA
+Management Scoring,CI Feral Animals,385,NA,NA,NA
+Management Scoring,CI Nat'l Marine Sanct.,340,NA,NA,NA
+Management Scoring,CI Nat'l Park,337,NA,NA,NA
+Management Scoring,Clean Water Act point source,322,NA,NA,NA
+Management Scoring,Coastal Commission,301,NA,NA,NA
+Management Scoring,Coastal Trail,355,NA,NA,NA
+Management Scoring,Commericial Fish Laws,286,NA,NA,NA
+Management Scoring,Dams & Levees,313,NA,NA,NA
+Management Scoring,DDT Ban,316,NA,NA,NA
+Management Scoring,Desalination Plant Hurdles,409,NA,NA,NA
+Management Scoring,Drug Interdiction,400,NA,NA,NA
+Management Scoring,Ease of permits/regs,304,NA,NA,NA
+Management Scoring,Eliminate Ship Building,397,NA,NA,NA
+Management Scoring,Homeless,421,1st asked 2014,NA,NA
+Management Scoring,Improve water quality,331,NA,NA,NA
+Management Scoring,Kelestra Songus,361,NA,NA,NA
+Management Scoring,Low Frequency Sonar,391,NA,NA,NA
+Management Scoring,Malibu Lagoon Rest'n,367,NA,NA,NA
+Management Scoring,Managed Retreat,265,CA Management Efforts,Question 47,NA
+Management Scoring,Mariculture hurdles,298,NA,NA,NA
+Management Scoring,Matilija Dam Removal,376,NA,NA,NA
+Management Scoring,MeBr Ban,319,NA,NA,NA
+Management Scoring,MPAs,349,NA,NA,NA
+Management Scoring,No LNG,283,NA,NA,NA
+Management Scoring,NonCoastal Dep,268,NA,NA,NA
+Management Scoring,Offshore Drilling,274,NA,NA,NA
+Management Scoring,Plastic bag bans,328,NA,NA,NA
+Management Scoring,Port fees/regulation,334,NA,NA,NA
+Management Scoring,Power Plants in Coastal,271,NA,NA,NA
+Management Scoring,Public Coastal Access,412,NA,NA,NA
+Management Scoring,Rec Fish Laws,289,NA,NA,NA
+Management Scoring,San Dieguito Rest'n,370,NA,NA,NA
+Management Scoring,San Nic Sea Otters,388,NA,NA,NA
+Management Scoring,San Onofre Rest'n,373,NA,NA,NA
+Management Scoring,Santa Rosa Hunting,310,NA,NA,NA
+Management Scoring,Shrinking Working Ports,406,NA,NA,NA
+Management Scoring,SMMNRA,343,NA,NA,NA
+Management Scoring,Steelhead Recovery,382,NA,NA,NA
+Management Scoring,Stormwater,325,NA,NA,NA
+Management Scoring,Tidal & Offshore Power,280,NA,NA,NA
+Management Scoring,Urban Parks,352,NA,NA,NA
+Management Scoring,Whale Strikes,403,NA,NA,NA
+Management Scoring,Wildlife Crossings,418,1st asked 2014,NA,NA
+Metadata,Metadata,1,Question 0,NA,NA
+Natural Disaster-Fires,Malibu Fires,218,Question 32,NA,NA
+Natural Disaster-Hurricanes,New Orleans rebuilt?,161,Question 14,NA,NA
+Natural Disaster-Nukes,Attitude towards nukes after SONGS Problem,173,Question 23,NA,NA
+Natural Disaster-Nukes,Attitude towards nukes drilling after Fukushima,168,Question 22,NA,NA
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after BP,198,Question 44,NA,NA
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after Refugio,203,Question 48,New Question May 2015,NA
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,208,Question 43,NA,NA
+Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,184,Question 41,NA,NA
+Natural Disaster-Oil Spill,Joint Resonse to Refugio Oil Spill,191,Question 46,New Question May 2015,NA
+Natural Disaster-Oil Spill,Offshore oil drilling?,178,Question 15,NA,NA
+Protected Areas,Visit natural areas,224,Question 26,NA,NA
+Seafood/Fisheries,Alaska seafood safe?,73,NA,NA,NA
+Seafood/Fisheries,CA fisheries health better?,54,Question 20,NA,NA
+Seafood/Fisheries,California seafood safe?,68,Question Modified (used to be all CA) May 2015,NA,NA
+Seafood/Fisheries,China seafood safe?,83,NA,NA,NA
+Seafood/Fisheries,Commerical Fishing Regulation Level,111,Question 37,note: changed to commerical in 2012,"""Fishing Regulation"" changed to ""Commercial Fishing"" in 2012"
+Seafood/Fisheries,Fish Threats,121,Question 40,NA,NA
+Seafood/Fisheries,Fishing Regulation Types,116,Question 38,NA,NA
+Seafood/Fisheries,Gulf of Mexico seafood safe?,58,Question 21,NA,NA
+Seafood/Fisheries,Heard of MPAs?,98,Question 32,NA,NA
+Seafood/Fisheries,Heard of the following in relation to seafood,128,Question 45,NA,NA
+Seafood/Fisheries,Japan seafood safe?,78,NA,NA,NA
+Seafood/Fisheries,Norway seafood safe?,88,NA,NA,NA
+Seafood/Fisheries,Purchasing seafood,47,Question 12,new cat in 2012,not dbl checked yet: no one from here on out to the right
+Seafood/Fisheries,Santa Barbara seafood safe?,63,New Question 1st asked May 2015,NA,NA
+Seafood/Fisheries,Seafood eating,102,Question 34,NA,NA
+Seafood/Fisheries,Seafood Oz.,109,Question 35,NA,NA
+Seafood/Fisheries,Thailand seafood safe?,93,NA,NA,NA
+Word Associations,When you hear California…,262,Question 1,New Question 1st asked Sept 2017,NA

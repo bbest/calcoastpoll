@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/"
+)
+```
+
+# calcoastpoll
+
+R package to tidy and visualize data from the California Coastal Poll data (Anderson et al, 2012).
+
+## Installation
+
+```{r, eval = FALSE}
+# install devtools package if you don't have it already
+#install.packages("devtools")
+
+# install calcoastpoll from Github
+devtools::install_github("bbest/calcoastpoll")
+```
+
+## Usage
+
+See functions listed in the [Reference](./reference/) section and how to use them together in the [Articles](./articles/), so far just [Analyze Poll Data](./articles/analyze.html) also viewable within Rstudio at the console with the command `vignette("analyze")`.

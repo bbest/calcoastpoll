@@ -1,5 +1,5 @@
 # calcoastpoll
-Data Science for Cal State Channel Islands, presentation 2019-02
+R package to tidy and visualize data from the California Coastal Poll
 
 
 ## Using Xarangin
@@ -21,22 +21,11 @@ Data Science for Cal State Channel Islands, presentation 2019-02
 ## RStudio Add-ins
 - giphyr
 
-## Instructions for Data Visualization Teaching Demo
-
-A 30-40 minute **data visualization teaching demo**/exercise.  This will give you a chance to showcase your teaching abilities.  To create something of an apples-to-apples comparison between our candidates, we’d like you to use a subset of our CSUCI Coastal Opinion Polling Dataset in some way during your teaching demo (to illustrate data QA/QCing, as the fodder for visualizations, or however you see fit).  Please don’t feel you have to use all of this data or that you must restrict yourself to only this data.  Use additional datasets as see fit.  The tools and learning outcomes are similarly up to you, but your target audience is a lower level undergraduate course. Available in this [Dropbox folder](https://www.dropbox.com/sh/z289k8mztx326lf/AAArsgbv3pUHxaM1p_ygslUsa?dl=0) are:
-
-1. an extract of ESRM’s Coastal Opinion Dataset (we are happy to answer any questions you have about this data or to clarify any aspects of it)
-1. an example of one of the survey instruments (from 2017) used to gather that data
-1. and a peer reviewed publication related to the dataset to help you with background.
-1. In a subfolder we have also included an excerpt of another dataset exploring the sustainability of seafood offerings here in coastal SoCal and an associated paper.  Feel free to play with this dataset, but you need to use it in your teaching demo.  Rather, we provide it here as another example of the kind of datasets our students collect over the course of our existing classes and to possibly spark discussions during your visit.
+## Ideas
 
 - map of pics
+- map of respondents: size marker bubbles by # over county
 
-- [Writing manuscripts in Rstudio, easy citations](http://rmhogervorst.nl/cleancode/blog/2017/03/14/content/post/2017-03-14-writing-manuscripts-in-rstudio/)
-- Software Carpentry style w/ bookdown
-  - Learning Outcomes
-  - Questions / Answers
-  
 - Fixes
   - Fig 9: 
     - flip x: more bar = more threat

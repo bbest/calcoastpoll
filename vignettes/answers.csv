@@ -1,0 +1,480 @@
+heading,question,answer,column,value_min,value_max,n_surveys
+Metadata,Metadata,version,4,NA,NA,12819
+Metadata,Metadata,interviewer,6,NA,NA,12883
+Metadata,Metadata,date,7,NA,NA,12818
+Metadata,Metadata,year,9,2005,2017,12883
+Metadata,Metadata,time,10,NA,NA,11813
+Metadata,Metadata,place,11,NA,NA,12814
+Metadata,Metadata,city,12,NA,NA,5275
+Metadata,Metadata,county,13,NA,NA,5033
+Beach,Visit SoCal Beaches,answered,14,0,1,4720
+Beach,Visit SoCal Beaches,daily,15,0,1,4567
+Beach,Visit SoCal Beaches,weekly,16,0,1,4567
+Beach,Visit SoCal Beaches,monthly,17,0,1,4567
+Beach,Visit SoCal Beaches,few yr,18,0,1,4567
+Beach,Visit SoCal Beaches,once yr,19,0,1,4567
+Beach,Visit SoCal Beaches,< once yr,20,0,1,4567
+Beach,Recreational Activities,answered,21,0,9,10217
+Beach,Recreational Activities,sail,22,0,1,9478
+Beach,Recreational Activities,boat,23,0,1,9495
+Beach,Recreational Activities,BBQ,24,0,10,9542
+Beach,Recreational Activities,camp,25,0,1,9537
+Beach,Recreational Activities,surf,26,0,1,9516
+Beach,Recreational Activities,dive,27,0,1,9488
+Beach,Recreational Activities,play,28,0,1,9542
+Beach,Recreational Activities,exerc,29,0,1,9559
+Beach,Recreational Activities,swim,30,0,11,9566
+Beach,Recreational Activities,wild view,31,0,10,9515
+Beach,Recreational Activities,horses,32,0,1,9493
+Beach,Recreational Activities,fish,33,0,2,9519
+Beach,Recreational Activities,spear,34,0,1,9492
+Beach,Recreational Activities,eat/drink,35,0,10,9540
+Beach,Recreational Activities,sports,36,0,1,9508
+Beach,Recreational Activities,hunt,37,0,1,9487
+Beach,Recreational Activities,ORV,38,0,1,9487
+Beach,Recreational Activities,walk,39,0,1,9567
+Beach,Recreational Activities,sun bathe,40,0,1,9530
+Beach,Recreational Activities,music,41,0,10,9503
+Beach,Recreational Activities,kayak,42,0,1,9489
+Beach,Recreational Activities,drive,43,0,10,9516
+Beach,Recreational Activities,paint,44,0,1,9485
+Beach,Recreational Activities,other*,45,0,1,9472
+Beach,Recreational Activities,*response,46,NA,NA,1290
+Seafood/Fisheries,Purchasing seafood,answered,47,0,1,12333
+Seafood/Fisheries,Purchasing seafood,always,48,0,1,12080
+Seafood/Fisheries,Purchasing seafood,occasion,49,0,1,12080
+Seafood/Fisheries,Purchasing seafood,rare,50,0,1,12080
+Seafood/Fisheries,Purchasing seafood,never,51,0,1,12080
+Seafood/Fisheries,Purchasing seafood,do not eat fish,52,0,1,6655
+Seafood/Fisheries,Purchasing seafood,unsure,53,0,1,12078
+Seafood/Fisheries,CA fisheries health better?,answered,54,0,1,11135
+Seafood/Fisheries,CA fisheries health better?,yes,55,0,1,10944
+Seafood/Fisheries,CA fisheries health better?,no,56,0,1,10944
+Seafood/Fisheries,CA fisheries health better?,unsure,57,0,1,10944
+Seafood/Fisheries,Gulf of Mexico seafood safe?,answered,58,0,1,9274
+Seafood/Fisheries,Gulf of Mexico seafood safe?,yes,59,0,1,8865
+Seafood/Fisheries,Gulf of Mexico seafood safe?,neutral,60,0,1,8865
+Seafood/Fisheries,Gulf of Mexico seafood safe?,no,61,0,1,8865
+Seafood/Fisheries,Gulf of Mexico seafood safe?,unsure,62,0,1,8865
+Seafood/Fisheries,Santa Barbara seafood safe?,answered,63,0,1,3396
+Seafood/Fisheries,Santa Barbara seafood safe?,yes,64,0,1,3240
+Seafood/Fisheries,Santa Barbara seafood safe?,neutral,65,0,1,3240
+Seafood/Fisheries,Santa Barbara seafood safe?,no,66,0,1,3240
+Seafood/Fisheries,Santa Barbara seafood safe?,unsure,67,0,1,3240
+Seafood/Fisheries,California seafood safe?,answered,68,0,1,7157
+Seafood/Fisheries,California seafood safe?,yes,69,0,1,6866
+Seafood/Fisheries,California seafood safe?,neutral,70,0,1,6866
+Seafood/Fisheries,California seafood safe?,no,71,0,1,6866
+Seafood/Fisheries,California seafood safe?,unsure,72,0,1,6866
+Seafood/Fisheries,Alaska seafood safe?,answered,73,0,1,7158
+Seafood/Fisheries,Alaska seafood safe?,yes,74,0,1,6898
+Seafood/Fisheries,Alaska seafood safe?,neutral,75,0,1,6897
+Seafood/Fisheries,Alaska seafood safe?,no,76,0,1,6898
+Seafood/Fisheries,Alaska seafood safe?,unsure,77,0,1,6898
+Seafood/Fisheries,Japan seafood safe?,answered,78,0,1,7781
+Seafood/Fisheries,Japan seafood safe?,yes,79,0,1,7479
+Seafood/Fisheries,Japan seafood safe?,neutral,80,0,1,7479
+Seafood/Fisheries,Japan seafood safe?,no,81,0,1,7479
+Seafood/Fisheries,Japan seafood safe?,unsure,82,0,1,7479
+Seafood/Fisheries,China seafood safe?,answered,83,0,1,7157
+Seafood/Fisheries,China seafood safe?,yes,84,0,1,6844
+Seafood/Fisheries,China seafood safe?,neutral,85,0,1,6844
+Seafood/Fisheries,China seafood safe?,no,86,0,1,6844
+Seafood/Fisheries,China seafood safe?,unsure,87,0,1,6844
+Seafood/Fisheries,Norway seafood safe?,answered,88,0,1,4742
+Seafood/Fisheries,Norway seafood safe?,yes,89,0,1,4553
+Seafood/Fisheries,Norway seafood safe?,neutral,90,0,1,4553
+Seafood/Fisheries,Norway seafood safe?,no,91,0,1,4553
+Seafood/Fisheries,Norway seafood safe?,unsure,92,0,1,4553
+Seafood/Fisheries,Thailand seafood safe?,answered,93,0,1,4741
+Seafood/Fisheries,Thailand seafood safe?,yes,94,0,1,4545
+Seafood/Fisheries,Thailand seafood safe?,neutral,95,0,1,4545
+Seafood/Fisheries,Thailand seafood safe?,no,96,0,1,4545
+Seafood/Fisheries,Thailand seafood safe?,unsure,97,0,1,4545
+Seafood/Fisheries,Heard of MPAs?,answered,98,0,5,7374
+Seafood/Fisheries,Heard of MPAs?,yes,99,0,1,6894
+Seafood/Fisheries,Heard of MPAs?,no,100,0,1,6828
+Seafood/Fisheries,Heard of MPAs?,unsure,101,0,1,6706
+Seafood/Fisheries,Seafood eating,answered,102,0,1,11620
+Seafood/Fisheries,Seafood eating,daily,103,0,1,11393
+Seafood/Fisheries,Seafood eating,weekly,104,0,1,11398
+Seafood/Fisheries,Seafood eating,monthly,105,0,1,11397
+Seafood/Fisheries,Seafood eating,few yr,106,0,1,11396
+Seafood/Fisheries,Seafood eating,once yr,107,0,1,11397
+Seafood/Fisheries,Seafood eating,never,108,0,1,11395
+Seafood/Fisheries,Seafood Oz.,answered,109,0,1,9206
+Seafood/Fisheries,Seafood Oz.,Oz.,110,0,1000,8115
+Seafood/Fisheries,Commerical Fishing Regulation Level,answered,111,0,2,8799
+Seafood/Fisheries,Commerical Fishing Regulation Level,over,112,0,1,8142
+Seafood/Fisheries,Commerical Fishing Regulation Level,right,113,0,1,8275
+Seafood/Fisheries,Commerical Fishing Regulation Level,under,114,0,1,8200
+Seafood/Fisheries,Commerical Fishing Regulation Level,unsure,115,-1,1,8275
+Seafood/Fisheries,Fishing Regulation Types,answered,116,0,4,8768
+Seafood/Fisheries,Fishing Regulation Types,season,117,0,2,7383
+Seafood/Fisheries,Fishing Regulation Types,size,118,0,2,7448
+Seafood/Fisheries,Fishing Regulation Types,gear,119,0,1,7254
+Seafood/Fisheries,Fishing Regulation Types,MPAs,120,0,1,7286
+Seafood/Fisheries,Fish Threats,answered,121,0,6,6121
+Seafood/Fisheries,Fish Threats,pollution,122,0,6,5536
+Seafood/Fisheries,Fish Threats,exotic p/a,123,0,6,5449
+Seafood/Fisheries,Fish Threats,excessive h/c,124,0,6,5469
+Seafood/Fisheries,Fish Threats,habitat dest,125,0,9,5469
+Seafood/Fisheries,Fish Threats,acid,126,0,41,5460
+Seafood/Fisheries,Fish Threats,temp,127,0,6,5455
+Seafood/Fisheries,Heard of the following in relation to seafood,answered,128,0,2,8736
+Seafood/Fisheries,Heard of the following in relation to seafood,MSC,129,0,1,6237
+Seafood/Fisheries,Heard of the following in relation to seafood,MBAquar,130,0,1,6314
+Seafood/Fisheries,Heard of the following in relation to seafood,BOIG,131,0,1,6244
+Seafood/Fisheries,Heard of the following in relation to seafood,CSSI,132,0,2,6267
+Seafood/Fisheries,Heard of the following in relation to seafood,Dolphine safe,133,0,1,6405
+Seafood/Fisheries,Heard of the following in relation to seafood,Sus. Seafood,134,0,2,6285
+Seafood/Fisheries,Heard of the following in relation to seafood,FishWise,135,0,1,6246
+Seafood/Fisheries,Heard of the following in relation to seafood,TyWarn,136,0,1,6241
+Seafood/Fisheries,Heard of the following in relation to seafood,Sea4Fut,137,0,1,6232
+Seafood/Fisheries,Heard of the following in relation to seafood,Naturl,138,0,1,6216
+Seafood/Fisheries,Heard of the following in relation to seafood,SeaGT,139,0,1,5142
+Seafood/Fisheries,Heard of the following in relation to seafood,9th Hr,140,0,1,5137
+Channel Islands,Last visited Channel Islands?-Original Categories,answered,141,0,1,8403
+Channel Islands,Last visited Channel Islands?-Original Categories,day,142,0,1,8232
+Channel Islands,Last visited Channel Islands?-Original Categories,week,143,0,1,8232
+Channel Islands,Last visited Channel Islands?-Original Categories,6 mo,144,0,1,8232
+Channel Islands,Last visited Channel Islands?-Original Categories,year,145,0,1,8232
+Channel Islands,Last visited Channel Islands?-Original Categories,>year,146,0,1,8232
+Channel Islands,Last visited Channel Islands?-Original Categories,never,147,0,1,8232
+Channel Islands,Channel Islands visited,answered,148,0,3,11134
+Channel Islands,Channel Islands visited,Mig,149,0,1,6746
+Channel Islands,Channel Islands visited,Rosa,150,0,1,6746
+Channel Islands,Channel Islands visited,Cruz,151,0,1,6745
+Channel Islands,Channel Islands visited,Ana,152,0,1,6745
+Channel Islands,Channel Islands visited,Barb,153,0,1,6746
+Channel Islands,Channel Islands visited,Nico,154,0,1,6745
+Channel Islands,Channel Islands visited,Clem,155,0,1,6744
+Channel Islands,Channel Islands visited,Cata,156,0,1,6742
+Climate Change,Climate change problem?,answered,157,0,1,11527
+Climate Change,Climate change problem?,yes,158,0,1,11379
+Climate Change,Climate change problem?,no,159,0,1,11379
+Climate Change,Climate change problem?,unsure,160,0,1,11379
+Natural Disaster-Hurricanes,New Orleans rebuilt?,answered,161,0,1,10403
+Natural Disaster-Hurricanes,New Orleans rebuilt?,all,162,0,1,9778
+Natural Disaster-Hurricanes,New Orleans rebuilt?,majority,163,0,1,9778
+Natural Disaster-Hurricanes,New Orleans rebuilt?,parts,164,0,1,9778
+Natural Disaster-Hurricanes,New Orleans rebuilt?,none,165,0,1,9778
+Natural Disaster-Hurricanes,New Orleans rebuilt?,unsure,166,0,1,9778
+Natural Disaster-Hurricanes,New Orleans rebuilt?,*added coments,167,NA,NA,2
+Natural Disaster-Nukes,Attitude towards nukes drilling after Fukushima,answered,168,0,1,7309
+Natural Disaster-Nukes,Attitude towards nukes drilling after Fukushima,<support,169,0,1,7007
+Natural Disaster-Nukes,Attitude towards nukes drilling after Fukushima,no change,170,0,1,7007
+Natural Disaster-Nukes,Attitude towards nukes drilling after Fukushima,>support,171,0,1,7007
+Natural Disaster-Nukes,Attitude towards nukes drilling after Fukushima,unsure,172,0,1,7007
+Natural Disaster-Nukes,Attitude towards nukes after SONGS Problem,answered,173,0,2,6696
+Natural Disaster-Nukes,Attitude towards nukes after SONGS Problem,<support,174,0,1,6372
+Natural Disaster-Nukes,Attitude towards nukes after SONGS Problem,no change,175,0,1,6372
+Natural Disaster-Nukes,Attitude towards nukes after SONGS Problem,>support,176,0,1,6372
+Natural Disaster-Nukes,Attitude towards nukes after SONGS Problem,unsure,177,0,1,6372
+Natural Disaster-Oil Spill,Offshore oil drilling?,answered,178,0,2,11513
+Natural Disaster-Oil Spill,Offshore oil drilling?,expand,179,0,1,11159
+Natural Disaster-Oil Spill,Offshore oil drilling?,cont,180,0,1,11159
+Natural Disaster-Oil Spill,Offshore oil drilling?,red,181,0,1,11159
+Natural Disaster-Oil Spill,Offshore oil drilling?,elim,182,0,1,11159
+Natural Disaster-Oil Spill,Offshore oil drilling?,unsure,183,0,1,11159
+Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,answered,184,0,1,9163
+Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,excelent,185,0,1,8345
+Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,good,186,0,1,8389
+Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,neutral,187,0,1,8413
+Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,bad,188,0,1,8486
+Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,horrible,189,0,1,8433
+Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,unsure,190,0,1,8465
+Natural Disaster-Oil Spill,Joint Resonse to Refugio Oil Spill,answered,191,0,2,3327
+Natural Disaster-Oil Spill,Joint Resonse to Refugio Oil Spill,excelent,192,0,1,3179
+Natural Disaster-Oil Spill,Joint Resonse to Refugio Oil Spill,good,193,0,1,3179
+Natural Disaster-Oil Spill,Joint Resonse to Refugio Oil Spill,neutral,194,0,1,3178
+Natural Disaster-Oil Spill,Joint Resonse to Refugio Oil Spill,bad,195,0,1,3179
+Natural Disaster-Oil Spill,Joint Resonse to Refugio Oil Spill,horrible,196,0,1,3178
+Natural Disaster-Oil Spill,Joint Resonse to Refugio Oil Spill,unsure,197,0,1,3178
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after BP,answered,198,0,1,9154
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after BP,less suportive,199,0,1,8537
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after BP,no change,200,0,1,8361
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after BP,more suportive,201,0,1,8257
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after BP,unsure,202,0,1,8307
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after Refugio,answered,203,0,1,3320
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after Refugio,less suportive,204,0,1,3104
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after Refugio,no change,205,0,1,3103
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after Refugio,more suportive,206,0,9,3104
+Natural Disaster-Oil Spill,Attitude towards offshore drilling after Refugio,unsure,207,0,1,3103
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,answered,208,0,2,6128
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,BP,209,0,2,5739
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,Halibration,210,0,2,5596
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,Fed regulator,211,0,2,5593
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,Congress,212,0,1,5525
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,Pres,213,0,1,5506
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,State,214,0,1,5515
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,Consumers,215,0,10,5500
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,no one,216,0,1,5503
+Natural Disaster-Oil Spill,Blame for oil spill in the Gulf,unsure,217,-1,1,5585
+Natural Disaster-Fires,Malibu Fires,answered,218,0,1,5840
+Natural Disaster-Fires,Malibu Fires,all,219,0,1,5569
+Natural Disaster-Fires,Malibu Fires,majority,220,0,1,5575
+Natural Disaster-Fires,Malibu Fires,parts,221,0,1,5578
+Natural Disaster-Fires,Malibu Fires,nothing,222,0,1,5568
+Natural Disaster-Fires,Malibu Fires,don't know,223,0,1,5573
+Protected Areas,Visit natural areas,answered,224,0,1,12477
+Protected Areas,Visit natural areas,daily,225,0,1,12119
+Protected Areas,Visit natural areas,weekly,226,0,1,12118
+Protected Areas,Visit natural areas,monthly,227,0,1,12118
+Protected Areas,Visit natural areas,few yr,228,0,1,12118
+Protected Areas,Visit natural areas,once yr,229,0,1,12118
+Protected Areas,Visit natural areas,< once yr,230,0,1,12118
+Endangered Species,Endangered Sp laws,answered,231,0,1,12476
+Endangered Species,Endangered Sp laws,eliminate,232,0,1,12168
+Endangered Species,Endangered Sp laws,less severe,233,0,1,12168
+Endangered Species,Endangered Sp laws,same,234,0,1,8684
+Endangered Species,Endangered Sp laws,expand,235,0,1,12168
+Endangered Species,Endangered Sp laws,unsure,236,0,1,12168
+Coastal (General),Rank threats to coastal,answered,237,0,1,11130
+Coastal (General),Rank threats to coastal,pollution,238,1,4,10519
+Coastal (General),Rank threats to coastal,exotic p/a,239,1,4,10519
+Coastal (General),Rank threats to coastal,excessive h/c,240,1,4,10519
+Coastal (General),Rank threats to coastal,habitat dest,241,0,4,10519
+Coastal (General),Good mgmnt of Coast?,answered,242,0,1,11534
+Coastal (General),Good mgmnt of Coast?,yes,243,0,1,11362
+Coastal (General),Good mgmnt of Coast?,no,244,0,1,11362
+Coastal (General),Good mgmnt of Coast?,unsure,245,0,1,11362
+Coastal (General),CA ocean health better?,answered,246,0,1,11531
+Coastal (General),CA ocean health better?,yes,247,0,1,11307
+Coastal (General),CA ocean health better?,no,248,0,1,11307
+Coastal (General),CA ocean health better?,unsure,249,0,1,11307
+Coastal Science,Describe ecology,answered,250,0,1,9469
+Coastal Science,Describe ecology,environmentalism,251,0,1,9338
+Coastal Science,Describe ecology,study p/a,252,0,1,9338
+Coastal Science,Describe ecology,study env. probs,253,0,1,9338
+Coastal Science,Describe ecology,unsure,254,0,1,9338
+Coastal Science,Describe ecology,other*,255,0,1,9335
+Coastal Science,Motivation of scientists,answered,257,0,1,8851
+Coastal Science,Motivation of scientists,objective,258,0,2,8552
+Coastal Science,Motivation of scientists,weird,259,0,2,8524
+Coastal Science,Motivation of scientists,own interests,260,0,2,8524
+Coastal Science,Motivation of scientists,infl policy,261,0,2,8541
+Word Associations,When you hear California…,answered,262,0,1,1489
+Word Associations,When you hear California…,comment-raw,263,NA,NA,1477
+Management Scoring,Managed Retreat,answered,265,0,1,2538
+Management Scoring,Managed Retreat,score,266,-2,4,1684
+Management Scoring,Managed Retreat,unsure,267,0,2,2200
+Management Scoring,NonCoastal Dep,answered,268,0,2,2465
+Management Scoring,NonCoastal Dep,score,269,-2,4,1722
+Management Scoring,NonCoastal Dep,unsure,270,0,1,2193
+Management Scoring,Power Plants in Coastal,answered,271,0,1,1896
+Management Scoring,Power Plants in Coastal,score,272,-2,2,1479
+Management Scoring,Power Plants in Coastal,unsure,273,0,1,1663
+Management Scoring,Offshore Drilling,answered,274,0,1,2468
+Management Scoring,Offshore Drilling,score,275,-2,4,1940
+Management Scoring,Offshore Drilling,unsure,276,-1,5,2193
+Management Scoring,1969 SB Spill,answered,277,0,1,2462
+Management Scoring,1969 SB Spill,score,278,-2,5,1627
+Management Scoring,1969 SB Spill,unsure,279,0,2,2211
+Management Scoring,Tidal & Offshore Power,answered,280,0,1,2462
+Management Scoring,Tidal & Offshore Power,score,281,-2,5,1709
+Management Scoring,Tidal & Offshore Power,unsure,282,-1,2,2206
+Management Scoring,No LNG,answered,283,0,1,1895
+Management Scoring,No LNG,score,284,-2,3,1346
+Management Scoring,No LNG,unsure,285,0,1,1685
+Management Scoring,Commericial Fish Laws,answered,286,0,1,2463
+Management Scoring,Commericial Fish Laws,score,287,-2,5,1794
+Management Scoring,Commericial Fish Laws,unsure,288,0,1,2206
+Management Scoring,Rec Fish Laws,answered,289,0,1,2465
+Management Scoring,Rec Fish Laws,score,290,-2,5,1786
+Management Scoring,Rec Fish Laws,unsure,291,0,1,2208
+Management Scoring,Abalone Closure,answered,292,0,1,2458
+Management Scoring,Abalone Closure,score,293,-2,5,1682
+Management Scoring,Abalone Closure,unsure,294,0,1,2198
+Management Scoring,1997 Gillnet ban,answered,295,0,1,2459
+Management Scoring,1997 Gillnet ban,score,296,-2,5,1625
+Management Scoring,1997 Gillnet ban,unsure,297,0,2,2213
+Management Scoring,Mariculture hurdles,answered,298,0,1,2459
+Management Scoring,Mariculture hurdles,score,299,-2,5,1612
+Management Scoring,Mariculture hurdles,unsure,300,-1,1,2217
+Management Scoring,Coastal Commission,answered,301,0,1,2463
+Management Scoring,Coastal Commission,score,302,-2,5,1770
+Management Scoring,Coastal Commission,unsure,303,0,1,2199
+Management Scoring,Ease of permits/regs,answered,304,0,1,2278
+Management Scoring,Ease of permits/regs,score,305,-2,5,1493
+Management Scoring,Ease of permits/regs,unsure,306,0,2,2043
+Management Scoring,AB 32 cap-and-trade,answered,307,0,1,2274
+Management Scoring,AB 32 cap-and-trade,score,308,-2,5,1470
+Management Scoring,AB 32 cap-and-trade,unsure,309,0,1,2048
+Management Scoring,Santa Rosa Hunting,answered,310,0,1,2458
+Management Scoring,Santa Rosa Hunting,score,311,-2,5,1813
+Management Scoring,Santa Rosa Hunting,unsure,312,0,9,2206
+Management Scoring,Dams & Levees,answered,313,0,2,1895
+Management Scoring,Dams & Levees,score,314,-2,2,1401
+Management Scoring,Dams & Levees,unsure,315,0,1,1679
+Management Scoring,DDT Ban,answered,316,0,1,2461
+Management Scoring,DDT Ban,score,317,-2,5,1887
+Management Scoring,DDT Ban,unsure,318,0,2,2198
+Management Scoring,MeBr Ban,answered,319,0,1,2459
+Management Scoring,MeBr Ban,score,320,-2,5,1788
+Management Scoring,MeBr Ban,unsure,321,-1,1,2190
+Management Scoring,Clean Water Act point source,answered,322,0,1,1895
+Management Scoring,Clean Water Act point source,score,323,-2,2,1387
+Management Scoring,Clean Water Act point source,unsure,324,0,1,1671
+Management Scoring,Stormwater,answered,325,0,1,1894
+Management Scoring,Stormwater,score,326,-2,3,1391
+Management Scoring,Stormwater,unsure,327,0,1,1662
+Management Scoring,Plastic bag bans,answered,328,0,1,2464
+Management Scoring,Plastic bag bans,score,329,-2,5,1974
+Management Scoring,Plastic bag bans,unsure,330,0,2,2184
+Management Scoring,Improve water quality,answered,331,0,1,1895
+Management Scoring,Improve water quality,score,332,-2,2,1479
+Management Scoring,Improve water quality,unsure,333,0,1,1660
+Management Scoring,Port fees/regulation,answered,334,0,1,2460
+Management Scoring,Port fees/regulation,score,335,-2,5,1688
+Management Scoring,Port fees/regulation,unsure,336,0,1,2182
+Management Scoring,CI Nat'l Park,answered,337,0,1,2463
+Management Scoring,CI Nat'l Park,score,338,-2,5,1942
+Management Scoring,CI Nat'l Park,unsure,339,0,1,2177
+Management Scoring,CI Nat'l Marine Sanct.,answered,340,0,1,2463
+Management Scoring,CI Nat'l Marine Sanct.,score,341,-2,5,1915
+Management Scoring,CI Nat'l Marine Sanct.,unsure,342,0,1,2178
+Management Scoring,SMMNRA,answered,343,0,1,2461
+Management Scoring,SMMNRA,score,344,-2,5,1901
+Management Scoring,SMMNRA,unsure,345,0,1,2173
+Management Scoring,CA Coastal Monument,answered,346,0,1,1894
+Management Scoring,CA Coastal Monument,score,347,-2,11,1403
+Management Scoring,CA Coastal Monument,unsure,348,0,1,1652
+Management Scoring,MPAs,answered,349,0,1,2462
+Management Scoring,MPAs,score,350,-2,5,1843
+Management Scoring,MPAs,unsure,351,0,1,2178
+Management Scoring,Urban Parks,answered,352,0,1,2459
+Management Scoring,Urban Parks,score,353,-2,5,1891
+Management Scoring,Urban Parks,unsure,354,0,1,2177
+Management Scoring,Coastal Trail,answered,355,0,1,1894
+Management Scoring,Coastal Trail,score,356,-2,2,1505
+Management Scoring,Coastal Trail,unsure,357,0,1,1661
+Management Scoring,Ballona Rest'n,answered,358,0,1,2463
+Management Scoring,Ballona Rest'n,score,359,-2,5,1745
+Management Scoring,Ballona Rest'n,unsure,360,0,1,2183
+Management Scoring,Kelestra Songus,answered,361,0,1,2274
+Management Scoring,Kelestra Songus,score,362,-2,5,1419
+Management Scoring,Kelestra Songus,unsure,363,0,2,2028
+Management Scoring,Bolsa Chica Rest'n,answered,364,0,1,1889
+Management Scoring,Bolsa Chica Rest'n,score,365,-2,2,1363
+Management Scoring,Bolsa Chica Rest'n,unsure,366,0,1,1653
+Management Scoring,Malibu Lagoon Rest'n,answered,367,0,1,2462
+Management Scoring,Malibu Lagoon Rest'n,score,368,-2,5,1781
+Management Scoring,Malibu Lagoon Rest'n,unsure,369,0,1,2170
+Management Scoring,San Dieguito Rest'n,answered,370,0,1,1894
+Management Scoring,San Dieguito Rest'n,score,371,-2,2,1378
+Management Scoring,San Dieguito Rest'n,unsure,372,0,2,1652
+Management Scoring,San Onofre Rest'n,answered,373,0,1,1894
+Management Scoring,San Onofre Rest'n,score,374,-2,2,1391
+Management Scoring,San Onofre Rest'n,unsure,375,0,1,1653
+Management Scoring,Matilija Dam Removal,answered,376,0,1,1894
+Management Scoring,Matilija Dam Removal,score,377,-2,2,1351
+Management Scoring,Matilija Dam Removal,unsure,378,0,1,1661
+Management Scoring,Beach Nests,answered,379,0,1,2464
+Management Scoring,Beach Nests,score,380,-2,5,1849
+Management Scoring,Beach Nests,unsure,381,0,1,2173
+Management Scoring,Steelhead Recovery,answered,382,0,1,1894
+Management Scoring,Steelhead Recovery,score,383,-2,5,1429
+Management Scoring,Steelhead Recovery,unsure,384,0,1,1650
+Management Scoring,CI Feral Animals,answered,385,0,1,2460
+Management Scoring,CI Feral Animals,score,386,-2,5,1821
+Management Scoring,CI Feral Animals,unsure,387,0,3,2184
+Management Scoring,San Nic Sea Otters,answered,388,0,2,2459
+Management Scoring,San Nic Sea Otters,score,389,-2,5,1717
+Management Scoring,San Nic Sea Otters,unsure,390,0,1,2186
+Management Scoring,Low Frequency Sonar,answered,391,0,1,1893
+Management Scoring,Low Frequency Sonar,score,392,-2,2,1362
+Management Scoring,Low Frequency Sonar,unsure,393,0,1,1655
+Management Scoring,2012 State Park Closures,answered,394,0,1,2460
+Management Scoring,2012 State Park Closures,score,395,-2,4,1782
+Management Scoring,2012 State Park Closures,unsure,396,0,2,2177
+Management Scoring,Eliminate Ship Building,answered,397,0,1,1893
+Management Scoring,Eliminate Ship Building,score,398,-2,10,1360
+Management Scoring,Eliminate Ship Building,unsure,399,0,1,1654
+Management Scoring,Drug Interdiction,answered,400,0,1,2464
+Management Scoring,Drug Interdiction,score,401,-2,5,1800
+Management Scoring,Drug Interdiction,unsure,402,0,2,2178
+Management Scoring,Whale Strikes,answered,403,0,2,2462
+Management Scoring,Whale Strikes,score,404,-2,5,1824
+Management Scoring,Whale Strikes,unsure,405,0,1,2170
+Management Scoring,Shrinking Working Ports,answered,406,0,1,1893
+Management Scoring,Shrinking Working Ports,score,407,-2,2,1345
+Management Scoring,Shrinking Working Ports,unsure,408,0,1,1659
+Management Scoring,Desalination Plant Hurdles,answered,409,0,1,1892
+Management Scoring,Desalination Plant Hurdles,score,410,-2,2,1289
+Management Scoring,Desalination Plant Hurdles,unsure,411,0,1,1665
+Management Scoring,Public Coastal Access,answered,412,0,1,2461
+Management Scoring,Public Coastal Access,score,413,-2,5,1821
+Management Scoring,Public Coastal Access,unsure,414,0,2,2173
+Management Scoring,CA Groundwater,answered,415,0,1,896
+Management Scoring,CA Groundwater,score,416,-2,5,569
+Management Scoring,CA Groundwater,unsure,417,0,1,812
+Management Scoring,Wildlife Crossings,answered,418,0,1,896
+Management Scoring,Wildlife Crossings,score,419,-2,5,588
+Management Scoring,Wildlife Crossings,unsure,420,0,2,808
+Management Scoring,Homeless,answered,421,0,1,895
+Management Scoring,Homeless,score,422,-2,5,601
+Management Scoring,Homeless,unsure,423,-2,1,810
+Demographics,Source of news,answered,424,0,4,12258
+Demographics,Source of news,paper,425,0,2,12000
+Demographics,Source of news,mag,426,0,1,12000
+Demographics,Source of news,internet (ANY),427,0,1,7733
+Demographics,Source of news,Internet (News),428,0,1,4267
+Demographics,Source of news,Internet (Social),429,0,2,4266
+Demographics,Source of news,TV,430,0,2,12000
+Demographics,Source of news,radio,431,0,1,12001
+Demographics,Source of news,other*,432,0,1,12001
+Demographics,Source of news,unsure,433,0,1,11999
+Demographics,Source of news,*response,434,NA,NA,381
+Demographics,Source of news,any internet,435,0,1,12062
+Demographics,Last natural area visited,answered,436,0,1,12474
+Demographics,Last natural area visited,response,437,NA,NA,11217
+Demographics,Valuation of nature,answered,439,0,2,11500
+Demographics,Valuation of nature,beauty,440,-1,1,11105
+Demographics,Valuation of nature,ecology,441,0,2,11106
+Demographics,Valuation of nature,unique,442,0,3,11106
+Demographics,Valuation of nature,economics,443,0,1,11104
+Demographics,Valuation of nature,recreate,444,0,1,11106
+Demographics,Valuation of nature,end sp,445,0,2,11106
+Demographics,Valuation of nature,other*,446,0,1,11104
+Demographics,Valuation of nature,*response,447,NA,NA,318
+Demographics,Env Issues,answered,448,0,1,2997
+Demographics,Env Issues,v cons,449,0,1,2670
+Demographics,Env Issues,cons,450,0,1,2670
+Demographics,Env Issues,mod,451,0,1,2670
+Demographics,Env Issues,lib,452,0,1,2670
+Demographics,Env Issues,v lib,453,0,1,2670
+Demographics,Env Issues,no opinion,454,0,1,2670
+Demographics,Zip Code,answerd,455,NA,NA,10085
+Demographics,Zip Code,Zip,456,0,913611,9369
+Demographics,Years at Zip,answered,457,0,15,10010
+Demographics,Years at Zip,ZipYrs,458,0,1970,9069
+Demographics,Occupation,answered,459,0,1,9618
+Demographics,Occupation,Job,460,NA,NA,8414
+Demographics,Year Born,answered,461,0,1,10018
+Demographics,Year Born,Born,462,0,2008,8693
+Demographics,Year Born,Age,463,13,87,1324
+Demographics,Household Income,answered,464,0,10,9584
+Demographics,Household Income,"<30,000",465,0,1,8083
+Demographics,Household Income,"$30-60,000",466,0,1,8081
+Demographics,Household Income,"$60-90,000",467,0,1,8050
+Demographics,Household Income,"$90-120,000",468,0,1,5969
+Demographics,Household Income,">120,000",469,0,1,3560
+Demographics,Household Income,">150,000",470,0,1,1253
+Demographics,Voter,answered,471,0,1,9618
+Demographics,Voter,yes,472,0,11,8843
+Demographics,Voter,no,473,0,1,8714
+Demographics,Gender,answered,474,0,1,7515
+Demographics,Gender,male,475,0,1,7035
+Demographics,Gender,female,476,0,1,6978
+Demographics,Education,answered,477,0,1,8572
+Demographics,Education,some HS,478,0,1,7731
+Demographics,Education,HS,479,0,1,7813
+Demographics,Education,some college,480,0,1,7913
+Demographics,Education,college,481,0,1,7872
+Demographics,Education,grad,482,0,1,7803
+Demographics,Language,answered,483,0,1,4612
+Demographics,Language,English,484,0,1,4379
+Demographics,Language,Spanish,485,0,1,4378
+Demographics,Language,other*,486,0,1,4376
+Demographics,Language,*response,487,NA,NA,650

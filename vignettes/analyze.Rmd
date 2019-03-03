@@ -1,0 +1,148 @@
+---
+title: "Analyze Poll Data"
+author: "Ben Best"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Analysis of Poll Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+resource_files:
+ - "Recreational Activities animated_treemap.gif"
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  message = F,
+  warning = F
+)
+```
+
+## Data: Read
+
+We'll need to read the data and transform it from a wide table (with many columns) to a long one (with only a few columns) so that each row contains a unique value, ie an answer, and then we can easily query for any question or combination. With this data structure we can create and use generic plotting functions that accept any question or combination of questions to generate visualizations.
+
+For the long data format from the polling data, we want a table with these columns:
+
+heading | question | answer | survey_id | value_num | value_chr
+--------|----------|--------|-----------|-----------|----------
+...     |          |        |           |           |
+
+To arrive at this more generic data structure for querying, you can use the function `tidy_poll()`. Besides the data in the original Excel spreadsheet, this function needs clean headers to fill the answers with associated headings, questions and comments. It also needs to know how many rows contain the actual data (not any summary information at the bottom), and which columns are legitimately character data types whereas the rest of the columns it will attempt to convert to numeric. Finally an output directory can be optionally be specified to output diagnostic csvs for cleaning the data, especially for values that could not convert to numeric or ones that should be bound to a different numeric range (eg 0 or 1, not -1 to 11).
+
+For more background on the how to read and manipulate data, you can check out the following cheatsheets found in RStudio's Help menu or at [Cheatsheets - RStudio](https://www.rstudio.com/resources/cheatsheets/):
+
+  - [Data Import](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf)
+  - [Data Transformation with dplyr](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
+
+```{r}
+# load libaries
+library(calcoastpoll) # devtools::load_all() # devtools::install()
+library(tidyverse)    # see tidyverse.org for packages loaded 
+library(plotly)       # use ggplotly() to make plot interactive
+library(DT)           # for rendering interactive datatable()
+
+# paths and parameters of poll data
+data_xlsx           <- "CoastalOpinionPoll_thru2017.xlsx"
+headers_xlsx        <- "CoastalOpinionPoll_thru2017_headers.xlsx"
+row_end             <- 12891
+cols_chr            <- c(2,4:7,10:13,46,167,256,263,434,437,438,447,455,460,487)
+dir_diagnostic_csvs <- "."
+
+# tidy up data and save as csv for reading next time
+if (file.exists("data.csv")){
+  d <- read_csv("data.csv", col_types = cols(value_num = col_double()))
+} else {
+  d <- tidy_poll(data_xlsx, headers_xlsx, row_end, cols_chr, dir_diagnostic_csvs)  
+  write_csv(d, "data.csv")
+}
+```
+
+Here are direct downloads to files:
+
+- input data and headers:
+    - [CoastalOpinionPoll_thru2017.xlsx](https://github.com/bbest/calcoastpoll/blob/master/vignettes/CoastalOpinionPoll_thru2017.xlsx)
+    - [CoastalOpinionPoll_thru2017_headers.xlsx](https://github.com/bbest/calcoastpoll/blob/master/vignettes/CoastalOpinionPoll_thru2017_headers.xlsx)
+
+- output data:
+    - [data.csv](https://github.com/bbest/calcoastpoll/blob/master/vignettes/data.csv)
+
+- output diagnostics:
+    - [questions.csv](https://github.com/bbest/calcoastpoll/blob/master/vignettes/questions.csv)
+    - [answers.csv](https://github.com/bbest/calcoastpoll/blob/master/vignettes/answers.csv)
+    - [todo_data-not-numeric.csv](https://github.com/bbest/calcoastpoll/blob/master/vignettes/todo_data-not-numeric.csv)
+
+
+## Data: Questions
+
+Now we can easily look at the questions and how many answers are associated and display with some interactivity using the `DT::datatable()` function.
+
+```{r}
+qs <- d %>% 
+  group_by(heading, question) %>% 
+  summarise(n_answers = n())
+datatable(qs)
+```
+
+
+## Bar: CA ocean health better?, by year
+
+Let's use another custom function `plot_bar_year()` to look at how answers to a question vary over the years.
+
+```{r}
+p <- plot_pctbar_qyn_year(d, "CA ocean health better?")
+p
+```
+
+
+## Bar: CA ocean health better?, by year, interactive
+
+To make a graph interactive, we simply feed the plot object to the `plotly::ggplotly()` function.
+
+```{r}
+ggplotly(p)
+```
+
+## Bar: Climate change problem?, by Education
+
+```{r}
+plot_pctbar_qyn_qc(d, "Climate change problem?", "Education")
+```
+
+## Bar: Climate change problem?, by Env Issues
+
+```{r}
+plot_pctbar_qyn_qc(d, "Climate change problem?", "Env Issues")
+```
+
+## Treemap: Recreational Activities
+
+```{r}
+plot_treemap_qc(d, "Recreational Activities")
+```
+
+## Treemap: Recreational Activities, animated
+
+```{r}
+library(gganimate)
+
+q   <- "Recreational Activities"
+gif <- paste(q, "animated_treemap.gif")
+
+# animate to gif
+if (!file.exists(gif)){
+  animate_treemap_qc_year(d, q, gif)
+}
+```
+
+Now include the gif in the document with the following markdown:
+
+```{r, results='asis', echo=FALSE}
+cat("``![](`r gif`)``")
+```
+
+![](`r gif`)
+
+

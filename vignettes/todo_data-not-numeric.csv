@@ -1,0 +1,116 @@
+survey_id,column,value_chr,heading,question,answer,comment1,comment2,comment3,value_num
+11086,27,o,Beach,Recreational Activities,dive,NA,NA,NA,NA
+11086,28,o,Beach,Recreational Activities,play,NA,NA,NA,NA
+11086,29,o,Beach,Recreational Activities,exerc,NA,NA,NA,NA
+10263,45,None,Beach,Recreational Activities,other*,NA,NA,NA,NA
+12123,108,p,Seafood/Fisheries,Seafood eating,never,NA,NA,NA,NA
+7608,110,?,Seafood/Fisheries,Seafood Oz.,Oz.,NA,NA,NA,NA
+9602,111,`,Seafood/Fisheries,Commerical Fishing Regulation Level,answered,Question 37,note: changed to commerical in 2012,"""Fishing Regulation"" changed to ""Commercial Fishing"" in 2012",NA
+4204,121,Answered incorrectly,Seafood/Fisheries,Fish Threats,answered,Question 40,NA,NA,NA
+7619,122,x,Seafood/Fisheries,Fish Threats,pollution,NA,NA,NA,NA
+8049,122,x,Seafood/Fisheries,Fish Threats,pollution,NA,NA,NA,NA
+7619,123,x,Seafood/Fisheries,Fish Threats,exotic p/a,NA,NA,NA,NA
+7626,123,x,Seafood/Fisheries,Fish Threats,exotic p/a,NA,NA,NA,NA
+7619,124,x,Seafood/Fisheries,Fish Threats,excessive h/c,NA,NA,NA,NA
+8049,124,x,Seafood/Fisheries,Fish Threats,excessive h/c,NA,NA,NA,NA
+7619,125,x,Seafood/Fisheries,Fish Threats,habitat dest,NA,NA,NA,NA
+6923,126,?,Seafood/Fisheries,Fish Threats,acid,NA,NA,NA,NA
+7619,126,x,Seafood/Fisheries,Fish Threats,acid,NA,NA,NA,NA
+7619,127,x,Seafood/Fisheries,Fish Threats,temp,NA,NA,NA,NA
+7626,127,x,Seafood/Fisheries,Fish Threats,temp,NA,NA,NA,NA
+8049,127,x,Seafood/Fisheries,Fish Threats,temp,NA,NA,NA,NA
+1408,148,?,Channel Islands,Channel Islands visited,answered,Question 18,NA,NA,NA
+4464,184,`,Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,answered,Question 41,NA,NA,NA
+4465,184,`,Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,answered,Question 41,NA,NA,NA
+4466,184,`,Natural Disaster-Oil Spill,Joint Resonse to BP Oil Spill,answered,Question 41,NA,NA,NA
+11284,196,-,Natural Disaster-Oil Spill,Joint Resonse to Refugio Oil Spill,horrible,NA,NA,NA,NA
+2332,257,?,Coastal Science,Motivation of scientists,answered,Question 33,NA,NA,NA
+2467,257,?,Coastal Science,Motivation of scientists,answered,Question 33,NA,NA,NA
+2490,257,?,Coastal Science,Motivation of scientists,answered,Question 33,NA,NA,NA
+10908,291,-,Management Scoring,Rec Fish Laws,unsure,NA,NA,NA,NA
+6289,367,`1,Management Scoring,Malibu Lagoon Rest'n,answered,NA,NA,NA,NA
+3881,456,Illegible,Demographics,Zip Code,Zip,NA,NA,NA,NA
+4515,456,03010 retired,Demographics,Zip Code,Zip,NA,NA,NA,NA
+5771,456,V823J9,Demographics,Zip Code,Zip,NA,NA,NA,NA
+6256,456,v8y2n2,Demographics,Zip Code,Zip,NA,NA,NA,NA
+6514,456,l653y8,Demographics,Zip Code,Zip,NA,NA,NA,NA
+6520,456,93065/92124,Demographics,Zip Code,Zip,NA,NA,NA,NA
+6988,456,v8Z3J9,Demographics,Zip Code,Zip,NA,NA,NA,NA
+9956,456,08104L5,Demographics,Zip Code,Zip,NA,NA,NA,NA
+9976,456,Canada,Demographics,Zip Code,Zip,NA,NA,NA,NA
+9992,456,RH37JP,Demographics,Zip Code,Zip,NA,NA,NA,NA
+10033,456,Germany,Demographics,Zip Code,Zip,NA,NA,NA,NA
+10051,456,"Holland, Amsterdam",Demographics,Zip Code,Zip,NA,NA,NA,NA
+10073,456,K1AOB1,Demographics,Zip Code,Zip,NA,NA,NA,NA
+10128,456,"T2T5A6 (Calgary, Canada)",Demographics,Zip Code,Zip,NA,NA,NA,NA
+10154,456,00000 (Chile),Demographics,Zip Code,Zip,NA,NA,NA,NA
+10211,456,cant read it,Demographics,Zip Code,Zip,NA,NA,NA,NA
+5812,458,24+,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+5816,458,50+,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+5820,458,8+,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6046,458,<1,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6047,458,<1,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6262,458,>1,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6270,458,<1,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6363,458,9+,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6364,458,9+,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6433,458,20+,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6483,458,20+,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6575,458,18/3,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6686,458,six,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6687,458,6 or 7,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6812,458,<1,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+6844,458,5+,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+7064,458,<1,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+7108,458,~3.5,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+7139,458,~8-10,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+7363,458,life,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+7989,458,<1,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+9566,458,<1,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10323,458,<4 months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10438,458,Entire Life,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10447,458,3 months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10456,458,since I was born,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10458,458,3 months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10500,458,3 months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10651,458,<6 months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10669,458,Entire Life,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10670,458,10months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10686,458,6 months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10779,458,less than year,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10801,458,Entire Life,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10821,458,Forever,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10849,458,0-2 months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10915,458,>5,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+10957,458,2 months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+11288,458,1 month,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+11292,458,>1,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+11330,458,10months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+11363,458,5months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+11395,458,6 months,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+11583,458,`11,Demographics,Years at Zip,ZipYrs,NA,NA,NA,NA
+4875,462,1970's,Demographics,Year Born,Born,NA,NA,NA,NA
+6909,464,`1,Demographics,Household Income,answered,Question 52,90-120 added 2012; >150 added Sept 2017,NA,NA
+6402,468,o,Demographics,Household Income,"$90-120,000",NA,NA,NA,NA
+6404,468,o,Demographics,Household Income,"$90-120,000",NA,NA,NA,NA
+3648,483,Super drunk Women,Demographics,Language,answered,Question 56,NA,NA,NA
+4037,483,what is the reason for the household income question?,Demographics,Language,answered,Question 56,NA,NA,NA
+4724,483,ms chemisty,Demographics,Language,answered,Question 56,NA,NA,NA
+5082,483,Thank you!,Demographics,Language,answered,Question 56,NA,NA,NA
+5768,483,Too Long…,Demographics,Language,answered,Question 56,NA,NA,NA
+5826,483,"""I had lost interest prior to this [#41] in filling out the survey. It is too long""",Demographics,Language,answered,Question 56,NA,NA,NA
+5831,483,"#19/20- Yes and no, we have learned more about enviro impact in that period of time. #25- None, must constantly change to keep up with species populations. #32- Regulated incorrectly. #37- Total BS. #38- Transocean, why is this not a choice? #39- Need better industry practices.",Demographics,Language,answered,Question 56,NA,NA,NA
+5839,483,"#7-Many environments will not be helped ""IF"" someone or something (meaning large group of protesters of followers) do something/Take action immediately!, #19- It is terrible point blank., #26- scientists range from good or bad depending on what the research., #33- Why would this be a problem now no one has addressed the issue in the first place. #24- Let wildlife be. Fish aren't cows, get them out of farms.",Demographics,Language,answered,Question 56,NA,NA,NA
+6138,483,not a US citizen,Demographics,Language,answered,Question 56,NA,NA,NA
+6156,483,some questions not answered,Demographics,Language,answered,Question 56,NA,NA,NA
+6165,483,some questions not answered,Demographics,Language,answered,Question 56,NA,NA,NA
+6408,483,"#6- It's a natural cycle and one volcano affects more than all ___! (unreadable) #10-(150 yrs)- that's a really long time, stupid question, duh! #14- Too much of it- it's stupid to rebuild in a flood basin. #23- Because you know it's being moitored, and action will be taken to maintain and repair #25- There are stupid laws in place- like keeping people out of bird nesting areas- where the birds themselves build nest near humans to ward off natural predators! #37- and stupidly over publicized and sensationalized",Demographics,Language,answered,Question 56,NA,NA,NA
+6424,483,"""with this survery, I have realized how ignorant I am in regards to my surroundings.",Demographics,Language,answered,Question 56,NA,NA,NA
+6435,483,some questions not answered,Demographics,Language,answered,Question 56,NA,NA,NA
+6732,483,some questions not answered,Demographics,Language,answered,Question 56,NA,NA,NA
+6911,483,"The surveyor thought the poll was too long and did not want to complete the rating section.  I was unsure if we use polls such as that one or not. Bummer since the man, who I met in the Channel Harbor, who was very into fishing so I was excited to see his answers.",Demographics,Language,answered,Question 56,NA,NA,NA
+7048,483,#14- with wetland/river restoration too to reduce flooding! #21- I think it can be safe and unsafe in each of these. #25- But enforced more!,Demographics,Language,answered,Question 56,NA,NA,NA
+7123,483,#39- belive more strongly in regulation,Demographics,Language,answered,Question 56,NA,NA,NA
+7177,483,"""AHHH too many questions [@#41]""",Demographics,Language,answered,Question 56,NA,NA,NA
+10242,486,tagalog,Demographics,Language,other*,NA,NA,NA,NA
+10264,486,arabic,Demographics,Language,other*,NA,NA,NA,NA
