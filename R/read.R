@@ -1,10 +1,30 @@
 #' Tidy poll data from a wide to long format for easy querying
 #'
 #' @param data_xlsx input path to original poll data Excel spreadsheet
-#' @param headers_xlsx input path to cleaned headers Excel spreadsheet, with comments aligned to question and no in between text
+#' @param headers_xlsx input path to cleaned headers Excel spreadsheet, with
+#'   comments aligned to question and no in between text
 #' @param row_end last row of poll data in original Excel spreadsheet
 #' @param cols_chr vector of columns that are character
-#' @param dir_diagnostic_csvs directory to output diagnostic csvs (questions, answers, todo_data-not-numeric)
+#' @param dir_diagnostic_csvs directory to output diagnostic csvs (questions,
+#'   answers, todo_data-not-numeric)
+#'
+#' @description Besides the data in the original Excel spreadsheet, this
+#'   function needs clean headers to fill the answers with associated headings,
+#'   questions and comments. It also needs to know how many rows contain the
+#'   actual data (not any summary information at the bottom), and which columns
+#'   are legitimately character data types whereas the rest of the columns it
+#'   will attempt to convert to numeric. Finally an output directory can be
+#'   optionally be specified to output diagnostic csvs for cleaning the data,
+#'   especially for values that could not convert to numeric or ones that should
+#'   be bound to a different numeric range (eg 0 or 1, not -1 to 11).
+#'
+#'   In future, all the necessary information would be contained in the header.
+#'   For instance, `data_xslx` is composed already of a clean `headers_xlsx`,
+#'   all summary information is removed so no need for `row_end`, and data type
+#'   along with acceptable range is appended to each answer heading, eg
+#'   `County [chr]` for character or `score [int;0-5]` for integer ranging from
+#'   0 to 5 and the default fields without attribution would be assumed to be
+#'   like `answered [int;0,1]` so only 0 or 1 is allowed.
 #'
 #' @return tidy data frame
 #' @export

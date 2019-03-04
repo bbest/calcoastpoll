@@ -4,7 +4,7 @@ author: "Ben Best"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Analysis of Poll Data}
+  %\VignetteIndexEntry{analyze-poll}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 resource_files:
@@ -30,7 +30,7 @@ heading | question | answer | survey_id | value_num | value_chr
 --------|----------|--------|-----------|-----------|----------
 ...     |          |        |           |           |
 
-To arrive at this more generic data structure for querying, you can use the function `tidy_poll()`. Besides the data in the original Excel spreadsheet, this function needs clean headers to fill the answers with associated headings, questions and comments. It also needs to know how many rows contain the actual data (not any summary information at the bottom), and which columns are legitimately character data types whereas the rest of the columns it will attempt to convert to numeric. Finally an output directory can be optionally be specified to output diagnostic csvs for cleaning the data, especially for values that could not convert to numeric or ones that should be bound to a different numeric range (eg 0 or 1, not -1 to 11).
+To arrive at this more generic data structure for querying, you can use the function `tidy_poll()`.
 
 For more background on the how to read and manipulate data, you can check out the following cheatsheets found in RStudio's Help menu or at [Cheatsheets - RStudio](https://www.rstudio.com/resources/cheatsheets/):
 
@@ -50,13 +50,16 @@ headers_xlsx        <- "CoastalOpinionPoll_thru2017_headers.xlsx"
 row_end             <- 12891
 cols_chr            <- c(2,4:7,10:13,46,167,256,263,434,437,438,447,455,460,487)
 dir_diagnostic_csvs <- "."
+data_rds            <- "data.rds"
 
 # tidy up data and save as csv for reading next time
-if (file.exists("data.csv")){
-  d <- read_csv("data.csv", col_types = cols(value_num = col_double()))
+if (file.exists(data_rds)){
+  #d <- read_csv("data.csv", col_types = cols(value_num = col_double()))
+  d <- read_rds(data_rds)
 } else {
   d <- tidy_poll(data_xlsx, headers_xlsx, row_end, cols_chr, dir_diagnostic_csvs)  
-  write_csv(d, "data.csv")
+  #write_csv(d, "data.csv")               # csv too big (155 MB) for Github
+  write_rds(d, data_rds, compress = "xz") # only 696 KB compressed
 }
 ```
 
@@ -67,7 +70,7 @@ Here are direct downloads to files:
     - [CoastalOpinionPoll_thru2017_headers.xlsx](https://github.com/bbest/calcoastpoll/blob/master/vignettes/CoastalOpinionPoll_thru2017_headers.xlsx)
 
 - output data:
-    - [data.csv](https://github.com/bbest/calcoastpoll/blob/master/vignettes/data.csv)
+    - [data.csv](https://drive.google.com/file/d/1DkqMjbiI0mKv55rMBHwPvb-hSRfVJ5KQ/view?usp=sharing)
 
 - output diagnostics:
     - [questions.csv](https://github.com/bbest/calcoastpoll/blob/master/vignettes/questions.csv)

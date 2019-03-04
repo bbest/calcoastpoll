@@ -32,7 +32,22 @@
 
 <meta property="og:title" content="Tidy poll data from a wide to long format for easy querying — tidy_poll" />
 
-<meta property="og:description" content="Tidy poll data from a wide to long format for easy querying" />
+<meta property="og:description" content="Besides the data in the original Excel spreadsheet, this
+  function needs clean headers to fill the answers with associated headings,
+  questions and comments. It also needs to know how many rows contain the
+  actual data (not any summary information at the bottom), and which columns
+  are legitimately character data types whereas the rest of the columns it
+  will attempt to convert to numeric. Finally an output directory can be
+  optionally be specified to output diagnostic csvs for cleaning the data,
+  especially for values that could not convert to numeric or ones that should
+  be bound to a different numeric range (eg 0 or 1, not -1 to 11).
+In future, all the necessary information would be contained in the header.
+  For instance, `data_xslx` is composed already of a clean `headers_xlsx`,
+  all summary information is removed so no need for `row_end`, and data type
+  along with acceptable range is appended to each answer heading, eg
+  `County [chr]` for character or `score [int;0-5]` for integer ranging from
+  0 to 5 and the default fields without attribution would be assumed to be
+  like `answered [int;0,1]` so only 0 or 1 is allowed." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -118,7 +133,22 @@
 
     <div class="ref-description">
     
-    <p>Tidy poll data from a wide to long format for easy querying</p>
+    <p>Besides the data in the original Excel spreadsheet, this
+  function needs clean headers to fill the answers with associated headings,
+  questions and comments. It also needs to know how many rows contain the
+  actual data (not any summary information at the bottom), and which columns
+  are legitimately character data types whereas the rest of the columns it
+  will attempt to convert to numeric. Finally an output directory can be
+  optionally be specified to output diagnostic csvs for cleaning the data,
+  especially for values that could not convert to numeric or ones that should
+  be bound to a different numeric range (eg 0 or 1, not -1 to 11).</p>
+<p>In future, all the necessary information would be contained in the header.
+  For instance, `data_xslx` is composed already of a clean `headers_xlsx`,
+  all summary information is removed so no need for `row_end`, and data type
+  along with acceptable range is appended to each answer heading, eg
+  `County [chr]` for character or `score [int;0-5]` for integer ranging from
+  0 to 5 and the default fields without attribution would be assumed to be
+  like `answered [int;0,1]` so only 0 or 1 is allowed.</p>
     
     </div>
 
@@ -134,7 +164,8 @@
     </tr>
     <tr>
       <th>headers_xlsx</th>
-      <td><p>input path to cleaned headers Excel spreadsheet, with comments aligned to question and no in between text</p></td>
+      <td><p>input path to cleaned headers Excel spreadsheet, with
+comments aligned to question and no in between text</p></td>
     </tr>
     <tr>
       <th>row_end</th>
@@ -146,7 +177,8 @@
     </tr>
     <tr>
       <th>dir_diagnostic_csvs</th>
-      <td><p>directory to output diagnostic csvs (questions, answers, todo_data-not-numeric)</p></td>
+      <td><p>directory to output diagnostic csvs (questions,
+answers, todo_data-not-numeric)</p></td>
     </tr>
     </table>
     
