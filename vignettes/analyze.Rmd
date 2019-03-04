@@ -92,7 +92,7 @@ datatable(qs)
 
 ## Bar: CA ocean health better?, by year
 
-Let's use another custom function `plot_bar_year()` to look at how answers to a question vary over the years.
+Let's use another custom function `plot_pctbar_qyn_year()` to look at how yes/no/unsure answers to a question (`qyn`) vary over years.
 
 ```{r}
 p <- plot_pctbar_qyn_year(d, "CA ocean health better?")
@@ -110,11 +110,15 @@ ggplotly(p)
 
 ## Bar: Climate change problem?, by Education
 
+Let's use another custom function `plot_pctbar_qyn_qc()` to look at how yes/no/unsure answers to a question (`qyn`) vary by another categorical question (`qc`).
+
 ```{r}
 plot_pctbar_qyn_qc(d, "Climate change problem?", "Education")
 ```
 
 ## Bar: Climate change problem?, by Env Issues
+
+Or `plot_pctbar_qyn_qc()` by a different categorical question (`qc`).
 
 ```{r}
 plot_pctbar_qyn_qc(d, "Climate change problem?", "Env Issues")
@@ -122,11 +126,15 @@ plot_pctbar_qyn_qc(d, "Climate change problem?", "Env Issues")
 
 ## Treemap: Recreational Activities
 
+A good way for evaluating composition is with a treemap, here by categorical question (`qc`) using custom `plot_treemap_qc()`:
+
 ```{r}
 plot_treemap_qc(d, "Recreational Activities")
 ```
 
 ## Treemap: Recreational Activities, animated
+
+Finally, we can generate an animated gif using `animate_treemap_qc_year()` to look at composition over time.
 
 ```{r}
 library(gganimate)
