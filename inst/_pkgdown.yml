@@ -1,0 +1,8 @@
+reference:
+- title: "Read"
+  contents:
+  - tidy_poll
+- title: "Visualize"
+  contents:
+  - starts_with("plot_")
+  - starts_with("animate_")

@@ -19,12 +19,12 @@
 #'   be bound to a different numeric range (eg 0 or 1, not -1 to 11).
 #'
 #'   In future, all the necessary information would be contained in the header.
-#'   For instance, `data_xslx` is composed already of a clean `headers_xlsx`,
-#'   all summary information is removed so no need for `row_end`, and data type
+#'   For instance, \code{data_xslx} is composed already of a clean \code{headers_xlsx},
+#'   all summary information is removed so no need for \code{row_end}, and data type
 #'   along with acceptable range is appended to each answer heading, eg
-#'   `County [chr]` for character or `score [int;0-5]` for integer ranging from
+#'   \code{County [chr]} for character or \code{score [int;0-5]} for integer ranging from
 #'   0 to 5 and the default fields without attribution would be assumed to be
-#'   like `answered [int;0,1]` so only 0 or 1 is allowed.
+#'   like \code{answered [int;0,1]} so only 0 or 1 is allowed.
 #'
 #' @return tidy data frame
 #' @export
